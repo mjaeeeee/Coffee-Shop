@@ -9,11 +9,16 @@
 <title>Cafe Control</title>
 </head>
 <style>
+table {
+	margin-left:auto;
+	margin-right:auto;
+}
 table.bound {
 	border-collapse: collapse;
 	border: 1px solid silver;
 	height: 500px;
 	width: 260px;
+	
 	
 }
 
@@ -65,11 +70,12 @@ h1 {
 </style>
 <body>
 <body>
+<H1 align=center>BMJ Cafe에 오신걸 환영합니다.</H1><hr>
 	<table>
 		<tr>
 			<td valign=top>
 				<table class='bound'>
-					<caption>MenuList</caption>
+					<caption>메뉴리스트</caption>
 					<tr>
 						<td colspan=2 align=right>
 							<button id=btnMenu>메뉴관리</button>
@@ -102,7 +108,7 @@ h1 {
 			</td>
 			<td valign=top>
 				<table class='bound' id=tbl2>
-					<caption>OrderList</caption>
+					<caption>주문리스트</caption>
 					<tr>
 						<td colspan=2 id=td2><select id=selOrder size=13></select></td>
 					</tr>
@@ -125,7 +131,7 @@ h1 {
 			</td>
 			<td valign=top>
 				<table class='bound'>
-					<caption>Sales history</caption>
+					<caption>판매내역</caption>
 					<tr>
 						<td colspan=2 align=right>
 							<button id=btnSummary>Summary</button>
